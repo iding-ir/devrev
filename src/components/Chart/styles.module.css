@@ -1,0 +1,23 @@
+.chart {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  transform: scaleY(-1);
+}
+
+.chart::after,
+.chart:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+}
+
+.chart:before {
+  transform: rotate(90deg);
+}
